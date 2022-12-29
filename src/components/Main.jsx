@@ -1,6 +1,6 @@
 import '../styles.scss';
 import * as React from 'react';
-import logo from '../zustime.png';
+import logo from '../zustime.GIF';
 
 const Main = () => {
   return (
