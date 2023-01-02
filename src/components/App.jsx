@@ -40,7 +40,6 @@ const App = () => {
           </a>
         </div>
       </div> */}
-      <Features />
       <Team />
       <Footer />
     </div>

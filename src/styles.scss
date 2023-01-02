@@ -8,8 +8,14 @@
 
 body {
     // background: linear-gradient(to left, #633A38 50%, #2E0000 50%);
-    background-color: #201d2c;
+    // background-color: #201d2c;
+    background-image: linear-gradient(to bottom, #13121a , #1a152c);
+    background-image: linear-gradient(to right, #13121a , #1a152c);
+
     font-size: 1rem;
+}
+a{
+target-new: tab;
 }
 
 // Nav Bar & Hero section
@@ -42,17 +48,53 @@ body {
     // -webkit-text-stroke: 2px #e19661;
     color: #cb986f;
     background-color: #f3ec78;
+    // regular gradient
     background-image: linear-gradient(45deg, #f3ec78, #af4261);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+
+    background: linear-gradient(to right, #f3ec78 20%, #cb986f 40%, #af4261 60%, #cb986f 80%, #f3ec78 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  
+  animation: shine 6s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
 }
+
+#Main h1:hover {
+        // to make flowing gradient
+        background: linear-gradient(to right, #f3ec78 20%, #cb986f 40%, #af4261 60%, #cb986f 80%, #f3ec78 100%);
+        background-size: 200% auto;
+        background-clip: text;
+        text-fill-color: transparent;
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+      
+      animation: shine 6s linear infinite;
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+}
+
+
+
 
 #Main h2 {
     font-size: 2rem;
-    color: #f7ede2d5;
+    color: #f7ede2f1;
 }
 
 
@@ -98,7 +140,6 @@ body {
     margin-top: 2rem;
     width: 400px;
     height: 400px;
-    transition: transform .7s ease-in-out;
 }
 
 
@@ -141,9 +182,7 @@ body {
     background-color: #e4e2f746;
 }
 
-
 // Team
-
 #Team {
     display: flex;
     justify-content: center;
@@ -155,38 +194,94 @@ body {
     gap: 2rem;
 }
 
+#Team h2 {
+    color: #cb986f;
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}
+
+
+
 #Team .member {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 14rem;
-    height: 16rem;
-    background:linear-gradient(#aba1b2, #f7ede2) padding-box,
-    linear-gradient(to right, #7c7283, #f7ede2) border-box;
-    border-radius: 1rem;
+    width: 16rem;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    border-radius: .4rem;
     border: 4px solid transparent;
 }
 
-#Team img {
+#Team .member-photo {
+    object-fit: cover;
     width: 10rem;
-    height: 12rem;
+    height: 10rem;
     border: 1px #f7ede2 solid;
-    border-radius: 1rem;
+    border-radius: 5rem;
+    // opacity: .9;
 }
 
 #Team div {
-    color:#201d2c
+    color:#201d2c;
 }
 
 #Team .memberContainer {
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 5rem;
+    // margin: 20px auto;
+    // display: grid;
+    // grid-template-columns: auto auto;
+    // grid-row: auto auto;
+    // grid-column-gap: 20px;
+    // grid-row-gap: 20px;
+
 }
 
+#Team .name {
+    color: white;
+    // font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
 
+#Team .title {
+    // font-size: .8rem;
+    color:#e0da73ea;
+    // letter-spacing: .08rem;
+}
+
+.linkedin-icon,
+.github-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: brightness(0) invert(1);
+    opacity: .6;
+    margin-top: 1rem;
+}
+
+.member-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
 
 // Footer
 #Footer {
@@ -203,18 +298,17 @@ body {
    font-size: .8rem;
 }
 
-
-
-
 // Background
- 
 .circles{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    // overflow: hidden;
 }
 
 .circles li{
@@ -225,7 +319,7 @@ body {
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 25s linear infinite;
-    bottom: -250px;    
+    bottom: 0;    
 }
 
 .circles li:nth-child(1){
@@ -303,7 +397,6 @@ body {
     animation-delay: 0s;
     animation-duration: 11s;
 }
-
 
 
 @keyframes animate {
