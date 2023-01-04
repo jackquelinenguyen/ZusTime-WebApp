@@ -8,7 +8,7 @@ const Main = () => {
   const newTeam = useStore((state) => state.increaseTeam);
   return (
     <div id="Main">
-      <div>
+      <div id="Hero">
         <h2>Welcome to</h2>
         <h1>ZusTime</h1>
         <div>Your go to for Zustand time travel debugging.</div>
@@ -21,7 +21,6 @@ const Main = () => {
             Get started.
           </a>
         </div>
-        {/* <button onClick={newTeam}>click to test store {team}</button> */}
       </div>
       <img id="Logo" src={logo} alt="Logo" />
     </div>
