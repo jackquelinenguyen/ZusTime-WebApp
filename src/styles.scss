@@ -491,6 +491,8 @@ body {
 
 
 @media only screen and (min-width: 1px) and (max-width:600px) {
+
+
     #Team .memberContainer {
         display: flex;
         justify-content: center;
@@ -523,18 +525,20 @@ body {
 
 #Main {
     width: auto;
-    height: auto;
-    margin-top: 0rem;
+    height: 33rem;
+    margin-top: 0;
     left: null;
     top: 0;
     border-radius: 0rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 0rem;
     flex-wrap: wrap;
     -webkit-transform: scale(0.5, 0.5);
+    margin-bottom: 3rem;
+    
 
 }
 
@@ -632,6 +636,19 @@ body {
     body {
         background-image: linear-gradient(to bottom, #191821 , #1a1629);
         font-size: 1rem;
+    }
+
+    .circles{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        overflow: hidden;
     }
 }
 
