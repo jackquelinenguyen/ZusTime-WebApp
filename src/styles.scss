@@ -27,7 +27,6 @@ body {
     width: 75%;
     height: 50%;
     margin-top: 18rem;
-    margin-bottom: 12rem;
     left: 15%;
     top: 20%;
     border-radius: .3rem;
@@ -163,15 +162,19 @@ body {
 }
 
 
-#Logo {
-    margin-top: 2rem;
+#Logo{
     width: 400px;
     height: 400px;
+    margin-bottom: 5rem;
 }
 
 
 // Features
 #Features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: fit-content;
     padding: 1rem;
     margin: 9rem;
@@ -191,7 +194,7 @@ body {
 
 .feature {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 3rem;
     gap: 3rem;
@@ -510,15 +513,20 @@ body {
 
     #Main {
         border-radius: .3rem;
+        margin-top: 0;
+        margin-bottom: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         -webkit-transform: scale(0.5, 0.5);
         // margin-left: 5rem;
+        height: fit-content
     }
 
+
     #Features {
+        margin: 0;
         padding: 1rem;
     }
     .feature {
@@ -584,6 +592,7 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-content: center;
+        position: relative;
     }
 
     .navLink:link {
@@ -633,6 +642,7 @@ body {
         flex-wrap: wrap;
         -webkit-transform: scale(0.8, 0.8);
         // margin-left: 5rem;
+        margin-top: 10rem;
     }
 
     #Features {
@@ -707,6 +717,8 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
         align-content: center;
+        position: relative;
+
     }
 
     .navLink:link {
