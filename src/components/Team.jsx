@@ -2,8 +2,8 @@ import '../styles.scss';
 import * as React from 'react';
 import jackie from '../photos/jackie.JPG';
 import sam from '../photos/sam.jpeg';
-import sylvia from '../photos/sylvia.JPG';
-import kels from '../photos/kels.JPG';
+import sylvia from '../photos/sylvia.jpg';
+import kels from '../photos/kels.jpg';
 
 const Team = () => {
   return (
