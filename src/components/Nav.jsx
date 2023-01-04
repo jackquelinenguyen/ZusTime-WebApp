@@ -8,15 +8,23 @@ const Nav = () => {
         <a className="navLink" href="">
           About
         </a>
-        <a className="navLink" href="https://github.com/oslabs-beta/ZusTime">
+        <a
+          className="navLink"
+          href="https://github.com/oslabs-beta/ZusTime"
+          target="_blank"
+        >
           Github
         </a>
       </div>
       <div id="rightNav">
-        <a className="navLink" href="">
-          Docs
+        <a className="navLink" href="#team-members">
+          Team
         </a>
-        <a className="navLink" href="https://github.com/oslabs-beta/ZusTime">
+        <a
+          className="navLink"
+          href="https://github.com/oslabs-beta/ZusTime"
+          target="_blank"
+        >
           Blog
         </a>
       </div>

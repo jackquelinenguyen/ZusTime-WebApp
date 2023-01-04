@@ -13,7 +13,7 @@ const Team = () => {
         <div>Amazing</div>
         <div>Team</div>
       </h2>
-      <div className="memberContainer">
+      <div id="team-members" className="memberContainer">
         <div className="member">
           <img className="member-photo" src={jackie} />
           <div className="name">Jackie Nguyen</div>

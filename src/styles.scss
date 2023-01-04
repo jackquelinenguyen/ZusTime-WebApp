@@ -9,9 +9,7 @@
 body {
     // background: linear-gradient(to left, #633A38 50%, #2E0000 50%);
     // background-color: #201d2c;
-    background-image: linear-gradient(to bottom, #13121a , #1a152c);
-    background-image: linear-gradient(to right, #13121a , #1a152c);
-
+    background-image: linear-gradient(to bottom, #191821 , #1a1629);
     font-size: 1rem;
 }
 a{
@@ -30,8 +28,8 @@ target-new: tab;
 #Main {
     width: 75%;
     height: 50%;
-    margin-top: 15rem;
-    margin-bottom: 18rem;
+    margin-top: 18rem;
+    margin-bottom: 15rem;
     left: 15%;
     top: 20%;
     border-radius: .3rem;
@@ -136,6 +134,41 @@ target-new: tab;
     border-radius: .3rem;
 }
 
+.get-started {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // background-color: #B8896C;
+    background: radial-gradient(#b5907a, #a87353);
+    margin-top: 2rem;
+    padding: .9rem;
+    width: fit-content;
+    border-radius: .5rem;
+    transition: all .2s ease-in-out; 
+    border: 1px solid rgba(255, 255, 255, 0.2)
+
+}
+
+.get-started:hover {
+    transform: scale(1.13); 
+    // background: linear-gradient(to right, #f3ec78 10%, #cb986f 30%, #af4261 70%, #cb986f 95%, #f3ec78 100%);
+    background: linear-gradient(to right, #cb986f, #af4261d0, #cb986f);
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+   -webkit-background-clip: background;
+   -webkit-text-fill-color: #f7ede2;
+  
+  animation: shine 3s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+}
+
+
 #Logo {
     margin-top: 2rem;
     width: 400px;
@@ -145,9 +178,55 @@ target-new: tab;
 
 // Features
 #Features {
-    width: 60%;
+    width: fit-content;
     padding: 1rem;
-    margin: 1rem;
+    margin: 9rem;
+}
+
+#Features h2 {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    gap: 3rem;
+}
+
+.feature-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.093);
+    width: 20rem;
+    height: 25rem;
+    border-radius: .5rem;
+}
+
+.feature-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.093);
+    width: 43rem;
+    border-radius: .5rem;
+}
+
+.feature img {
+    height: 25rem;
+    width: auto;
+    padding: 2rem;
 
 }
 
@@ -192,6 +271,7 @@ target-new: tab;
     padding: 1rem;
     margin: 4rem;
     gap: 2rem;
+    margin-bottom: 9rem;
 }
 
 #Team h2 {
@@ -301,18 +381,19 @@ target-new: tab;
 // Background
 .circles{
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: block;
     // overflow: hidden;
 }
 
 .circles li{
-    position: absolute;
+    position: fixed;
     display: block;
     list-style: none;
     width: 20px;
