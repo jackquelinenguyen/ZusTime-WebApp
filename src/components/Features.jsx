@@ -19,7 +19,7 @@ const Features = () => {
           </div>
           <br></br>
           <div className="caption">
-            Compare your most recent store and the jumped state.
+            Compare your most recent state and the jumped state.
           </div>
         </div>
         <div className="feature-img">
@@ -33,8 +33,8 @@ const Features = () => {
             <h3>Visualizer</h3>
           </div>
           <div className="caption">
-            View your application's component hierarchy to better understand
-            your data flow.
+            View your application's component hierarchy tree to better
+            understand your data flow and component relationships.
           </div>
         </div>
         <div className="feature-img">

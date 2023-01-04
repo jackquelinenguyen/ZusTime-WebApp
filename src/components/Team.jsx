@@ -20,10 +20,7 @@ const Team = () => {
           <div className="title">Software Engineer</div>
           <div className="member-links">
             <div className="github">
-              <a
-                href="https://github.com/jackquelinenguyen
-"
-              >
+              <a href="https://github.com/jackquelinenguyen" target="_blank">
                 <img
                   className="github-icon"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -33,8 +30,8 @@ const Team = () => {
             </div>
             <div className="linked-in">
               <a
-                href="https://www.linkedin.com/in/jackquelinenguyen/
-"
+                href="https://www.linkedin.com/in/jackquelinenguyen/"
+                target="_blank"
               >
                 <img
                   className="linkedin-icon"
@@ -51,7 +48,7 @@ const Team = () => {
           <div className="title">Software Engineer</div>
           <div className="member-links">
             <div className="github">
-              <a href="https://github.com/kels-graner">
+              <a href="https://github.com/kels-graner" target="_blank">
                 <img
                   className="github-icon"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -60,7 +57,10 @@ const Team = () => {
               </a>
             </div>
             <div className="linked-in">
-              <a href="https://www.linkedin.com/in/kelseygraner/">
+              <a
+                href="https://www.linkedin.com/in/kelseygraner/"
+                target="_blank"
+              >
                 <img
                   className="linkedin-icon"
                   src="https://cdn.onlinewebfonts.com/svg/img_24651.png"
@@ -77,7 +77,7 @@ const Team = () => {
           <div className="title">Software Engineer</div>
           <div className="member-links">
             <div className="github">
-              <a href="https://github.com/samanthawarrick">
+              <a href="https://github.com/samanthawarrick" target="_blank">
                 <img
                   className="github-icon"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -87,8 +87,8 @@ const Team = () => {
             </div>
             <div className="linked-in">
               <a
-                href="https://www.linkedin.com/in/samantha-warrick/
-"
+                href="https://www.linkedin.com/in/samantha-warrick/"
+                target="_blank"
               >
                 <img
                   className="linkedin-icon"
@@ -105,7 +105,7 @@ const Team = () => {
           <div className="title">Software Engineer</div>
           <div className="member-links">
             <div className="github">
-              <a href="https://github.com/sylvia45335">
+              <a href="https://github.com/sylvia45335" target="_blank">
                 <img
                   className="github-icon"
                   src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
@@ -114,7 +114,10 @@ const Team = () => {
               </a>
             </div>
             <div className="linked-in">
-              <a href="https://www.linkedin.com/in/sylviathong/">
+              <a
+                href="https://www.linkedin.com/in/sylviathong/"
+                target="_blank"
+              >
                 <img
                   className="linkedin-icon"
                   src="https://cdn.onlinewebfonts.com/svg/img_24651.png"
