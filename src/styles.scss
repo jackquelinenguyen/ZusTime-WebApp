@@ -683,12 +683,13 @@ body {
     #Main {
         border-radius: .3rem;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         -webkit-transform: scale(0.8, 0.8);
         // margin-left: 5rem;
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
 
     #Features {
