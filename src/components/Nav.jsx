@@ -22,7 +22,7 @@ const Nav = () => {
         </a>
         <a
           className="navLink"
-          href="https://github.com/oslabs-beta/ZusTime"
+          href="https://medium.com/@samanthawarrick/its-about-time-for-zustime-4828655a26d"
           target="_blank"
         >
           Blog
