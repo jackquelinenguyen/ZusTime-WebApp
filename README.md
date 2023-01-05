@@ -1,6 +1,6 @@
 <div align="center">
     <img src="zustime-banner.gif" alt="zustand banner gif" width="100%"/>
-    <h1>Come Check out to ZusTime</h1>
+    <h1>Come Check out ZusTime</h1>
     <h2>Zustand's first dedicated time travel debugging tool!</h2>
 </div>
 
