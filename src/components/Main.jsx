@@ -18,7 +18,7 @@ const Main = () => {
             href="https://github.com/oslabs-beta/ZusTime"
             target="_blank"
           >
-            Get started.
+            Get started
           </a>
         </div>
       </div>
